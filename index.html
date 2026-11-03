@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CenterJUR — logística e outsourcing jurídico nacional para escritórios de advocacia." />
@@ -39,8 +40,8 @@
 
     header{position:absolute;inset:0 0 auto 0;z-index:10}
     .nav{height:88px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:12px;color:#fff}
-    .brand-mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;font-family:'Playfair Display';font-size:1.1rem;color:var(--gold)}
+    .brand{display:flex;align-items:center;color:#fff}
+    .brand-mark{display:block;width:min(220px,48vw);height:auto;max-height:58px;object-fit:contain;object-position:left center}
     .brand-name{font-weight:700;letter-spacing:.11em}
     .brand small{display:block;font-size:.54rem;letter-spacing:.1em;color:#bcc6d4;margin-top:2px}
     .nav-links{display:flex;gap:28px;align-items:center;color:#d9e0e9;font-size:.9rem}
@@ -98,7 +99,7 @@
     .benefit{border:1px solid rgba(255,255,255,.1);padding:16px;display:flex;gap:12px;align-items:flex-start}
     .benefit b{display:block}.benefit span{color:#aeb8c4;font-size:.84rem}
     .map-wrap{position:relative;min-height:330px;display:grid;place-items:center}
-    .map{width:min(430px,100%);filter:drop-shadow(0 0 24px rgba(216,174,90,.16))}
+    .coverage .map{display:block;width:min(430px,100%);height:auto;filter:brightness(0) saturate(100%) invert(75%) sepia(33%) saturate(760%) hue-rotate(357deg) brightness(93%) contrast(88%) drop-shadow(0 0 24px rgba(216,174,90,.16))}
     .city-badge{position:absolute;right:8%;bottom:16%;background:#fff;color:var(--ink);padding:20px 24px;box-shadow:var(--shadow);text-align:center}
     .city-badge strong{font-family:'Playfair Display';font-size:2rem;display:block}
     .city-badge span{font-size:.7rem;letter-spacing:.14em}
@@ -151,7 +152,7 @@
 <header>
   <div class="container nav">
     <a class="brand" href="#top">
-      <span class="brand-mark">CJ</span>
+      <img class="brand-mark" src="logo.png" alt="CenterJUR logo" />
       <span><span class="brand-name">CENTERJUR</span><small>LOGÍSTICA E OUTSOURCING JURÍDICO NACIONAL</small></span>
     </a>
     <nav class="nav-links">
@@ -247,11 +248,7 @@
       </div>
     </div>
     <div class="map-wrap">
-      <svg class="map" viewBox="0 0 440 390" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa conceitual do Brasil">
-        <path d="M146 39L188 27L228 47L260 40L280 60L325 70L348 104L336 132L365 151L351 190L324 209L311 245L278 262L257 298L226 321L199 360L171 341L160 306L127 289L116 260L89 243L98 211L75 183L96 150L86 124L113 101L119 70L146 39Z" stroke="#D8AE5A" stroke-width="2"/>
-        <g fill="#EDC979"><circle cx="150" cy="90" r="4"/><circle cx="225" cy="85" r="4"/><circle cx="300" cy="110" r="4"/><circle cx="285" cy="175" r="4"/><circle cx="220" cy="205" r="4"/><circle cx="170" cy="155" r="4"/><circle cx="150" cy="245" r="4"/><circle cx="235" cy="280" r="4"/><circle cx="200" cy="330" r="4"/></g>
-        <g stroke="#D8AE5A" stroke-opacity=".35"><path d="M150 90L225 85L300 110L285 175L220 205L170 155L150 90Z"/><path d="M170 155L150 245L235 280L220 205L285 175"/><path d="M235 280L200 330"/></g>
-      </svg>
+      <img class="map" src="assets/mapa.svg" alt="Mapa do Brasil com os estados e pontos de cobertura nacional" />
       <div class="city-badge"><strong>274</strong><span>CIDADES</span></div>
     </div>
   </div>
@@ -292,7 +289,7 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div><div class="brand"><span class="brand-mark">CJ</span><span><span class="brand-name">CENTERJUR</span><small>LOGÍSTICA E OUTSOURCING JURÍDICO NACIONAL</small></span></div><p>Logística e outsourcing jurídico com coordenação centralizada e cobertura nacional.</p></div>
+      <div><div class="brand"><img class="brand-mark" src="logo.png" alt="CenterJUR logo" /></div><p>Logística e outsourcing jurídico com coordenação centralizada e cobertura nacional.</p></div>
       <div><h4>Navegação</h4><a href="#sobre">A CenterJUR</a><a href="#solucoes">Soluções</a><a href="#processo">Como atuamos</a></div>
       <div><h4>Institucional</h4><a href="#">Privacidade</a><a href="#">Termos de uso</a><a href="#contato">Contato</a></div>
       <div><h4>Atendimento</h4><p>Segunda a sexta-feira</p><p>Campinas — SP — Brasil</p></div>
